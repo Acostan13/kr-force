@@ -53,6 +53,9 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
+    ENV.apollo = {
+      apiURL: 'http://localhost:3000/api/kr-force/graphql'
+    }
   }
 
   return ENV;
